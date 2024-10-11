@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="../static/assets/css/style.css">
+      
+</head>
+<body>
+    <!-- Container for the dashboard -->
+    <div class="dashboard-container">
+        <!-- User's name (you can fetch this from the server or input dynamically) -->
+        <h1 id="username">Welcome, {{ user }}!</h1>
+
+        <!-- Parking Status -->
+        <div class="parking-status">
+            <div class="status-box">
+                <h2>Filled Spaces</h2>
+                <p id="filled-spaces">0</p>
+            </div>
+            <div class="status-box">
+                <h2>Booked Spaces</h2>
+                <p id="booked-spaces">0</p>
+            </div>
+            <div class="status-box">
+                <h2>Empty Spaces</h2>
+                <p id="empty-spaces">0</p>
+            </div>
+        </div>
+
+        <!-- Booking Section -->
+        <div class="booking-section">
+            <h2>Book a Parking Spot</h2>
+            <br>
+            <button id="book-spot-btn">Book Spot</button>
+            <p id="booking-id">Parking ID: <span id="parking-id">N/A</span></p>
+        </div>
+    </div>
+
+    <script src="../static/assets/js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="adminStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <ul>
+            <li><a href="#overview"><i class="fas fa-chart-line"></i> Overview</a></li>
+            <li><a href="#users"><i class="fas fa-users"></i> Manage Users</a></li>
+            <li><a href="#parking"><i class="fas fa-parking"></i> Manage Parking</a></li>
+            <li><a href="#bookings"><i class="fas fa-calendar-check"></i> Manage Bookings</a></li>
+            <li><a href="#analytics"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+            <li><a href="#settings"><i class="fas fa-cog"></i> Settings</a></li>
+            <li><a href="#logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <header>
+            <h1>Welcome, Admin</h1>
+        </header>
+
+        <!-- Overview Section -->
+        <section id="overview" class="dashboard-section">
+            <h2>Overview</h2>
+            <div class="dashboard-cards">
+                <div class="card">
+                    <h3>Total Users</h3>
+                    <p>150</p>
+                </div>
+                <div class="card">
+                    <h3>Filled Parking Spaces</h3>
+                    <p>120</p>
+                </div>
+                <div class="card">
+                    <h3>Available Spaces</h3>
+                    <p>30</p>
+                </div>
+                <div class="card">
+                    <h3>Total Bookings</h3>
+                    <p>200</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manage Users Section -->
+        <section id="users" class="dashboard-section">
+            <h2>Manage Users</h2>
+            <div class="user-management">
+                <button class="btn solid">Add User</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>JohnDoe</td>
+                            <td>john@example.com</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>JaneSmith</td>
+                            <td>jane@example.com</td>
+                            <td>Inactive</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Manage Parking Section -->
+        <section id="parking" class="dashboard-section">
+            <h2>Manage Parking</h2>
+            <button class="btn solid">Add Parking Space</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Space ID</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Occupied</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Manage Bookings Section -->
+        <section id="bookings" class="dashboard-section">
+            <h2>Manage Bookings</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>User</th>
+                        <th>Parking Space</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>JohnDoe</td>
+                        <td>1</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>JaneSmith</td>
+                        <td>2</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Analytics Section -->
+        <section id="analytics" class="dashboard-section">
+            <h2>Analytics</h2>
+            <p>Coming Soon!</p>
+        </section>
+    </div>
+</body>
+</html>
